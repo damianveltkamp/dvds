@@ -1,4 +1,5 @@
 import NextLink from "next/link";
+
 import { SC_NextLink } from "./Link.styles";
 
 export type LinkProps = {

@@ -1,7 +1,7 @@
 import * as NextImage from "next/image";
-import { Parameters, DecoratorFn } from "@storybook/react";
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "../src/theme/theme";
+import { Parameters, DecoratorFn } from "@storybook/react";
 
 const OriginalNextImage = NextImage.default;
 
