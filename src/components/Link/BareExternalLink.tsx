@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 export type BareExternalLinkProps = {
   href: string;
   children: ReactNode;
-  className: string;
+  className?: string;
 };
 
 export const BareExternalLink = ({

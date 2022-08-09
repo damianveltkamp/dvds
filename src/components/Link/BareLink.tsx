@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 export type BareLinkProps = {
   href: string;
   children: ReactNode;
-  className: string;
+  className?: string;
 };
 
 export const BareLink = ({ href, children, className }: BareLinkProps) => {
