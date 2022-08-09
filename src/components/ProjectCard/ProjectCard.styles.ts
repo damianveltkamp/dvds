@@ -54,6 +54,9 @@ export const SC_ProjectImageContainer = styled("figure")`
 `;
 
 export const SC_ProjectCardContentContainer = styled("div")`
+  position: relative;
+  z-index: 10;
+  margin-top: -2px;
   padding: 20px;
   text-align: center;
   background: ${({ theme }) => `${theme.colors.DVOrange}`};
