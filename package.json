@@ -2,6 +2,11 @@
   "name": "dvds",
   "version": "0.1.0",
   "private": true,
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "files": [
+    "build"
+  ],
   "scripts": {
     "dev": "start-storybook -p 6006 -s ./public",
     "storybook-build": "build-storybook -s public"
@@ -16,6 +21,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.10",
     "@storybook/addon-interactions": "^6.5.10",
@@ -32,6 +39,11 @@
     "eslint-config-next": "12.2.4",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-storybook": "^0.6.3",
+    "node-sass": "^7.0.1",
+    "rollup": "^2.77.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.32.1",
     "typescript": "4.7.4"
   }
 }
