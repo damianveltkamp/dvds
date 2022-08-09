@@ -9,8 +9,11 @@
   ],
   "scripts": {
     "dev": "start-storybook -p 6006 -s ./public",
-    "build": "rollup -c",
-    "storybook-build": "build-storybook -s public"
+    "build:types": "ttsc --project ./tsconfig.json -d --emitDeclarationOnly --noEmit false --outDir dist/types --declarationDir dist/types",
+    "build:rollup": "rollup -c",
+    "build": "rimraf dist && yarn build:types && yarn build:rollup",
+    "storybook-build": "build-storybook -s public",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.10.0",
@@ -23,7 +26,10 @@
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.4",
+    "@rollup/plugin-url": "^7.0.0",
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.10",
     "@storybook/addon-interactions": "^6.5.10",
@@ -41,11 +47,14 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-storybook": "^0.6.3",
     "node-sass": "^7.0.1",
+    "rimraf": "^3.0.2",
     "rollup": "^2.77.2",
+    "rollup-plugin-node-externals": "^4.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.32.1",
+    "ttypescript": "^1.5.13",
     "typescript": "4.7.4"
   }
 }
