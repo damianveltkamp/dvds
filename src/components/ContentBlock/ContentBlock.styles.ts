@@ -25,4 +25,13 @@ export const SC_ContentBlock = styled("div")`
       margin-bottom: 0;
     }
   }
+
+  ul,
+  ol {
+    margin-block: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 `;

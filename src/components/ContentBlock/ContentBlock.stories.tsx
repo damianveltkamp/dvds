@@ -1,10 +1,11 @@
 import { Story } from "@storybook/react";
 
 import { Heading } from "../Heading/Heading";
+import { Image } from "../Image/Image";
+import { List } from "../List/List";
 import { MainContainer } from "../MainContainer/MainContainer";
 import { Paragraph } from "../Paragraph/Paragraph";
 import { ContentBlock, ContentBlockProps } from "./ContentBlock";
-import { Image } from "../Image/Image";
 
 export default {
   title: "Components/ContentBlock",
@@ -39,6 +40,7 @@ export const contentBlock: Story<ContentBlockProps> = () => {
           on your machine to your local package that you can use inside your
           project to test locally without publishing.
         </Paragraph>
+        <List items={["Item 1", "Item 2", "Item 3"]} />
       </ContentBlock>
       <ContentBlock>
         <Heading lvl="h2">Local package testing</Heading>
