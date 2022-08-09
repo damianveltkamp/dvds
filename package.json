@@ -2,10 +2,10 @@
   "name": "dvds",
   "version": "0.1.0",
   "private": true,
-  "main": "build/index.js",
-  "module": "build/index.es.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "files": [
-    "build"
+    "dist"
   ],
   "scripts": {
     "dev": "start-storybook -p 6006 -s ./public",
