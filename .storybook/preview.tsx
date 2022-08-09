@@ -18,6 +18,15 @@ export const parameters: Parameters = {
       date: /Date$/,
     },
   },
+  backgrounds: {
+    default: "DVBlue",
+    values: [
+      {
+        name: "DVBlue",
+        value: theme.colors.DVBlue,
+      },
+    ],
+  },
 };
 
 export const decorators: DecoratorFn[] = [

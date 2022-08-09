@@ -8,6 +8,6 @@ export default {
   argTypes: {},
 };
 
-export const example: Story<LinkProps> = () => {
+export const link: Story<LinkProps> = () => {
   return <Link text="Click me" href="www.google.com" />;
 };
