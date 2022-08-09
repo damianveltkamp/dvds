@@ -2,7 +2,7 @@ import NextImage from "next/image";
 
 import { SC_ImageContainer } from "./Image.styles";
 
-export type LinkProps = {
+export type ImageProps = {
   src: string;
   alt: string;
   layout?: "fill" | "intrinsic" | "fixed" | "responsive";
@@ -10,7 +10,7 @@ export type LinkProps = {
   height?: number;
 };
 
-export const Image = ({ src, alt, layout, width, height }: LinkProps) => {
+export const Image = ({ src, alt, layout, width, height }: ImageProps) => {
   return (
     <SC_ImageContainer>
       <NextImage
