@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "dev": "start-storybook -p 6006 -s ./public",
+    "build": "rollup -c",
     "storybook-build": "build-storybook -s public"
   },
   "dependencies": {
@@ -43,6 +44,7 @@
     "rollup": "^2.77.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.32.1",
     "typescript": "4.7.4"
   }
