@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "start-storybook -p 6006 -s ./public",
-    "build": "build-storybook -s public"
+    "storybook-build": "build-storybook -s public"
   },
   "dependencies": {
     "@emotion/react": "^11.10.0",
