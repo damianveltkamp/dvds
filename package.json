@@ -1,12 +1,12 @@
 {
-  "name": "dvds",
+  "name": "@damianveltkamp/dvds",
   "version": "0.1.0",
-  "private": true,
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "files": [
     "dist"
   ],
+  "browserslist": "> 0.25%, not dead",
   "scripts": {
     "dev": "start-storybook -p 6006 -s ./public",
     "build:types": "ttsc --project ./tsconfig.json -d --emitDeclarationOnly --noEmit false --outDir dist/types --declarationDir dist/types",
@@ -16,6 +16,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
+    "@babel/runtime": "^7.18.9",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@storybook/theming": "^6.5.10",
@@ -25,6 +26,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
+    "@babel/plugin-transform-runtime": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@emotion/babel-plugin": "^11.10.0",
+    "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
@@ -56,5 +63,8 @@
     "rollup-plugin-typescript2": "^0.32.1",
     "ttypescript": "^1.5.13",
     "typescript": "4.7.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
