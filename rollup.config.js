@@ -27,9 +27,9 @@ const config = {
     }),
     peerDepsExternal(),
     resolve(),
-    commonjs(),
     typescript(),
     postcss(),
+    commonjs(),
   ],
 };
 
