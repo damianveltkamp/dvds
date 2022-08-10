@@ -12,7 +12,7 @@ const config = {
   input: "src/index.ts",
   output: [
     {
-      file: packageJson.main,
+      dir: packageJson.main,
       format: "cjs",
       exports: "named",
       preserveModules: true,
@@ -20,7 +20,7 @@ const config = {
       sourcemap: true,
     },
     {
-      file: packageJson.module,
+      dir: packageJson.module,
       exports: "named",
       preserveModules: true,
       preserveModulesRoot: "src",
