@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "outDir": "dist",
+    "declarationDir": "dist/types/",
+    "declaration": true,
     "rootDir": "src",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -16,6 +19,7 @@
     "jsx": "react-jsx",
     "incremental": true
   },
+  "files": ["src/index.ts"],
   "include": ["next-env.d.ts", "emotion.d.ts", "src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules", "dist", "src/**/*.stories.tsx"]
+  "exclude": ["node_modules", "src/**/*.stories.tsx"]
 }
