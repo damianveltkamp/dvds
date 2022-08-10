@@ -14,11 +14,16 @@ const config = {
     {
       file: packageJson.main,
       format: "cjs",
+      exports: "named",
+      preserveModules: true,
+      preserveModulesRoot: "src",
       sourcemap: true,
     },
     {
       file: packageJson.module,
-      format: "esm",
+      exports: "named",
+      preserveModules: true,
+      preserveModulesRoot: "src",
       sourcemap: true,
     },
   ],
