@@ -13,14 +13,6 @@ const config = {
   output: [
     {
       dir: packageJson.main,
-      format: "cjs",
-      exports: "named",
-      preserveModules: true,
-      preserveModulesRoot: "src",
-      sourcemap: true,
-    },
-    {
-      dir: packageJson.module,
       exports: "named",
       preserveModules: true,
       preserveModulesRoot: "src",

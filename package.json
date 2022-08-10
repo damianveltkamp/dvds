@@ -1,15 +1,14 @@
 {
   "name": "@damianveltkamp/dvds",
-  "version": "0.1.1",
-  "main": "dist/cjs",
-  "module": "dist/esm",
+  "version": "0.1.4",
+  "main": "dist/esm",
   "files": [
     "dist"
   ],
   "browserslist": "> 0.25%, not dead",
   "scripts": {
     "dev": "start-storybook -p 6006 -s ./public",
-    "build:types": "tsc --project ./tsconfig.json -d --emitDeclarationOnly --noEmit false --outDir dist/types --declarationDir dist",
+    "build:types": "tsc --project ./tsconfig.json -d --emitDeclarationOnly --noEmit false --outDir dist/types --declarationDir dist/types",
     "build:rollup": "rollup -c",
     "build": "rimraf dist && yarn build:types && yarn build:rollup",
     "storybook-build": "build-storybook -s public",
