@@ -1,4 +1,4 @@
-export const theme = {
+const theme = {
   colors: {
     DVBlue: "#1f2937",
     DVOrange: "#efa35d",
@@ -38,3 +38,7 @@ export const theme = {
     },
   },
 } as const;
+
+type TypeofTheme = typeof theme;
+
+export { theme, TypeofTheme };
