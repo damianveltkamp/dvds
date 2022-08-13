@@ -1,4 +1,5 @@
 import { Story } from "@storybook/react";
+import { Link } from "../Link/Link";
 
 import { MainContainer } from "../MainContainer/MainContainer";
 import { Heading, HeadingProps } from "./Heading";
@@ -12,7 +13,9 @@ export default {
 export const h1: Story<HeadingProps> = () => {
   return (
     <MainContainer>
-      <Heading lvl="h1">Heading level 1</Heading>
+      <Heading lvl="h1">
+        Heading level 1 <Link text="heey" href="www.google.nl" />
+      </Heading>
     </MainContainer>
   );
 };
