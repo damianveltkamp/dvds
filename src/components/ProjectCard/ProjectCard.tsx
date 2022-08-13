@@ -29,7 +29,9 @@ export const ProjectCard = ({ title, href, image }: ProjectCardProps) => {
             <Image layout="fill" src={image.src} alt={image.alt} />
           </SC_ProjectImageContainer>
           <SC_ProjectCardContentContainer>
-            <Heading lvl="h3">{title}</Heading>
+            <Heading lvl="h3" variant="black">
+              {title}
+            </Heading>
           </SC_ProjectCardContentContainer>
         </SC_ProjectCardExternal>
       );
@@ -40,7 +42,9 @@ export const ProjectCard = ({ title, href, image }: ProjectCardProps) => {
             <Image layout="fill" src={image.src} alt={image.alt} />
           </SC_ProjectImageContainer>
           <SC_ProjectCardContentContainer>
-            <Heading lvl="h3">{title}</Heading>
+            <Heading lvl="h3" variant="black">
+              {title}
+            </Heading>
           </SC_ProjectCardContentContainer>
         </SC_ProjectCard>
       );
