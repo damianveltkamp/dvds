@@ -3,7 +3,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import typescript from "rollup-plugin-typescript2";
 import external from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
-import { terser } from "rollup-plugin-terser";
+import svgr from "@svgr/rollup";
 
 const packageJson = require("./package.json");
 
@@ -30,7 +30,8 @@ const config = {
       sourcemap: true,
     },
   ],
-  plugins: [external(), resolve(), commonjs(), typescript(), postcss()],
+  external: Object.keys(packageJson.dependencies),
+  plugins: [external(), resolve(), commonjs(), typescript(), svgr(), postcss()],
 };
 
 export default config;
