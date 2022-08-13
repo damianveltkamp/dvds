@@ -16,5 +16,5 @@
     "forceConsistentCasingInFileNames": true,
     "jsxImportSource": "@emotion/react"
   },
-  "include": ["emotion.d.ts", "src"]
+  "include": ["custom.d.ts", "src"]
 }
