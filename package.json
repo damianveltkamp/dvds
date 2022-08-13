@@ -14,6 +14,7 @@
     "dev": "start-storybook -p 6006 -s ./public",
     "build:types": "tsc --project ./tsconfig.json -d --emitDeclarationOnly --noEmit false --outDir dist/types --declarationDir dist/types",
     "build:rollup": "rollup -c",
+    "build:icons": "npx @svgr/cli@5 ./src/icons/svgs --template ./src/icons/svgrtemplate.js --ext tsx --out-dir ./src/icons/components",
     "build": "rimraf dist && yarn build:types && yarn build:rollup",
     "storybook-build": "build-storybook -s public",
     "prepublishOnly": "npm run build",
@@ -21,20 +22,20 @@
     "test-local-reset": "npm unpublish --force @damianveltkamp/dvds --@damianveltkamp:registry=http://localhost:4873"
   },
   "peerDependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
     "next": "12.2.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0"
+    "react-dom": "18.2.0"
   },
   "dependencies": {
-    "next": "12.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
     "@babel/runtime": "^7.18.9",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
-    "@storybook/theming": "^6.5.10"
+    "@storybook/theming": "^6.5.10",
+    "next": "12.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
