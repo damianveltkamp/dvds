@@ -2,7 +2,7 @@ import { Story } from "@storybook/react";
 
 import { Link, LinkProps } from "./Link";
 
-export default {
+const storyConfig = {
   title: "Components/Link",
   component: Link,
   argTypes: {},
@@ -11,3 +11,5 @@ export default {
 export const link: Story<LinkProps> = () => {
   return <Link text="Click me" href="www.google.com" />;
 };
+
+export default storyConfig;

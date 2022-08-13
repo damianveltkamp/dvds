@@ -2,7 +2,7 @@ import { Story } from "@storybook/react";
 
 import { Header, HeaderProps } from "./Header";
 
-export default {
+const storyConfig = {
   title: "Components/Header",
   component: Header,
   argTypes: {},
@@ -11,3 +11,5 @@ export default {
 export const link: Story<HeaderProps> = () => {
   return <Header />;
 };
+
+export default storyConfig;

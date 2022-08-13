@@ -1,10 +1,10 @@
 import { Story } from "@storybook/react";
-import { Link } from "../Link/Link";
 
+import { Link } from "../Link/Link";
 import { MainContainer } from "../MainContainer/MainContainer";
 import { Heading, HeadingProps } from "./Heading";
 
-export default {
+const storyConfig = {
   title: "Components/Heading",
   component: Heading,
   argTypes: {},
@@ -43,3 +43,5 @@ export const h4: Story<HeadingProps> = () => {
     </MainContainer>
   );
 };
+
+export default storyConfig;

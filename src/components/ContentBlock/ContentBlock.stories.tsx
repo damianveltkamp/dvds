@@ -7,7 +7,7 @@ import { MainContainer } from "../MainContainer/MainContainer";
 import { Paragraph } from "../Paragraph/Paragraph";
 import { ContentBlock, ContentBlockProps } from "./ContentBlock";
 
-export default {
+const storyConfig = {
   title: "Components/ContentBlock",
   component: ContentBlock,
   argTypes: {},
@@ -61,3 +61,5 @@ export const contentBlock: Story<ContentBlockProps> = () => {
     </MainContainer>
   );
 };
+
+export default storyConfig;

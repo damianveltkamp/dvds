@@ -3,7 +3,7 @@ import { Story } from "@storybook/react";
 import { MainContainer } from "../MainContainer/MainContainer";
 import { ProjectCard, ProjectCardProps } from "./ProjectCard";
 
-export default {
+const storyConfig = {
   title: "Components/ProjectCard",
   component: ProjectCard,
   argTypes: {},
@@ -23,3 +23,5 @@ export const projectCard: Story<ProjectCardProps> = () => {
     </MainContainer>
   );
 };
+
+export default storyConfig;

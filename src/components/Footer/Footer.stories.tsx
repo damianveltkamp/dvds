@@ -2,7 +2,7 @@ import { Story } from "@storybook/react";
 
 import { Footer, FooterProps } from "./Footer";
 
-export default {
+const storyConfig = {
   title: "Components/Footer",
   component: Footer,
   argTypes: {},
@@ -11,3 +11,5 @@ export default {
 export const footer: Story<FooterProps> = () => {
   return <Footer />;
 };
+
+export default storyConfig;

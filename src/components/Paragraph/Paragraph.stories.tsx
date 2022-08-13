@@ -3,7 +3,7 @@ import { Story } from "@storybook/react";
 import { MainContainer } from "../MainContainer/MainContainer";
 import { Paragraph, ParagraphProps } from "./Paragraph";
 
-export default {
+const storyConfig = {
   title: "Components/Paragraph",
   component: Paragraph,
   argTypes: {},
@@ -21,3 +21,5 @@ export const paragraph: Story<ParagraphProps> = () => {
     </MainContainer>
   );
 };
+
+export default storyConfig;

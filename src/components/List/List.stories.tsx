@@ -2,7 +2,7 @@ import { Story } from "@storybook/react";
 
 import { List, ListProps } from "./List";
 
-export default {
+const storyConfig = {
   title: "Components/List",
   component: List,
   argTypes: {},
@@ -15,3 +15,5 @@ export const unorderedList: Story<ListProps> = () => {
 export const orderedList: Story<ListProps> = () => {
   return <List isOrdered={true} items={["Item 1", "item 2"]} />;
 };
+
+export default storyConfig;
