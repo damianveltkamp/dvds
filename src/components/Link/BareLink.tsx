@@ -9,7 +9,7 @@ export type BareLinkProps = {
 
 export const BareLink = ({ href, children, className }: BareLinkProps) => {
   return (
-    <NextLink href={href} className={className}>
+    <NextLink href={href} className={className} passHref>
       {children}
     </NextLink>
   );
