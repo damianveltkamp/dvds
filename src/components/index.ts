@@ -1,5 +1,6 @@
 export * from "./ContentBlock/ContentBlock";
 export * from "./Footer/Footer";
+export * from "./Header/Header";
 export * from "./Heading/Heading";
 export * from "./Image/Image";
 export * from "./Link/Link";
