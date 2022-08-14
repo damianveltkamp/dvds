@@ -28,7 +28,7 @@ function SvgGithubBrands({ color, size }: IconProps) {
   const customIconStyles = css({
     width: width,
     height: height,
-    color: theme.colors[color],
+    color: color ? theme.colors[color] : theme.colors.white,
   });
   return (
     <div css={[iconWrapperStyles, customIconStyles]}>

@@ -26,7 +26,7 @@ const template = ({ componentName, imports, exports, props, jsx }, { tpl }) => {
       const customIconStyles = css({
         width: width,
         height: height,
-        color: theme.colors[color]
+        color: color ? theme.colors[color] : theme.colors.white
       })
 
       return (
