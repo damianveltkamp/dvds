@@ -2,11 +2,6 @@ import { Story } from "@storybook/react";
 
 import GithubBrandsIcon from "../components/GithubBrands";
 
-const theme = {
-  colors: {
-    foo: "bar",
-  },
-};
 const storyConfig = {
   title: "Icons/GithubBrandsIcon",
   component: GithubBrandsIcon,
@@ -14,7 +9,7 @@ const storyConfig = {
 };
 
 export const githubBrandsIcon: Story = () => {
-  return <GithubBrandsIcon size={50} />;
+  return <GithubBrandsIcon size={50} color="white" />;
 };
 
 export default storyConfig;

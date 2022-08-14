@@ -31,7 +31,14 @@ const config = {
     },
   ],
   external: Object.keys(packageJson.dependencies),
-  plugins: [external(), resolve(), commonjs(), typescript(), svgr(), postcss()],
+  plugins: [
+    external(),
+    resolve(),
+    commonjs(),
+    typescript(),
+    svgr({ typescript: true }),
+    postcss(),
+  ],
 };
 
 export default config;
