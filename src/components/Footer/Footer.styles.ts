@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 
 export const SC_Footer = styled("footer")`
+  margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
