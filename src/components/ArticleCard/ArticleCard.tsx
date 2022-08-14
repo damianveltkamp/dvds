@@ -27,7 +27,7 @@ export const ArticleCard = ({
   slug,
 }: ArticleCardProps) => {
   return (
-    <BareLink href={`/posts/${slug}`}>
+    <BareLink href={`${slug}`}>
       <SC_ArticleCardContainer>
         <SC_ArticleTitle>{title}</SC_ArticleTitle>
         <SC_ArticleDate dateTime={dateTime}>{date}</SC_ArticleDate>
