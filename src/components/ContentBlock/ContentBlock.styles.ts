@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const SC_ContentBlock = styled("div")`
-  margin-block: 60px;
+  margin-bottom: 60px;
 
   > h1,
   > h2,

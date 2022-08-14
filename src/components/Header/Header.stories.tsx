@@ -8,7 +8,7 @@ const storyConfig = {
   argTypes: {},
 };
 
-export const link: Story<HeaderProps> = () => {
+export const header: Story<HeaderProps> = () => {
   return <Header />;
 };
 
