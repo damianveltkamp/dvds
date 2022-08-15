@@ -6,7 +6,8 @@ export const SC_ArticleCardContainer = styled("a")`
   padding: 40px;
   color: ${({ theme }) => `${theme.colors.white}`};
   border-radius: 10px;
-  color: ${({ theme }) => `${theme.colors.DVBlue}`}; ;
+  color: ${({ theme }) => `${theme.colors.DVBlue}`};
+  text-decoration: none;
 `;
 
 export const SC_ArticleTitle = styled("h2")``;
