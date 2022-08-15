@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+
 import media from "../../utils/media";
 
 export const SC_MainContainer = styled("main")`
