@@ -16,10 +16,6 @@ export const globalStyles = css`
     flex-direction: column;
   }
 
-  main {
-    padding: 40px 0;
-  }
-
   * {
     box-sizing: border-box;
   }
