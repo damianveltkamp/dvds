@@ -1,4 +1,5 @@
 import { css } from "@emotion/react";
+import { theme } from "../theme/theme";
 
 export const globalStyles = css`
   html,
@@ -6,7 +7,7 @@ export const globalStyles = css`
     height: 100%;
     padding: 0;
     margin: 0;
-    font-size: 20px;
+    font-size: ${theme.global.fontSize};
   }
 
   #__next {

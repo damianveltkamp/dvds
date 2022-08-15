@@ -1,4 +1,7 @@
 const theme = {
+  global: {
+    fontSize: 20,
+  },
   colors: {
     DVBlue: "#1f2937",
     DVOrange: "#efa35d",
@@ -36,6 +39,12 @@ const theme = {
       fontSize: "1rem",
       lineHeight: "150%",
     },
+  },
+  breakpoints: {
+    sm: 480,
+    md: 768,
+    lg: 1024,
+    xl: 1280,
   },
 } as const;
 
