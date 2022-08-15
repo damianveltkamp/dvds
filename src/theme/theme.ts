@@ -13,25 +13,49 @@ const theme = {
   },
   typography: {
     heading: {
-      h1: {
-        fontFamily: "Roboto-Bold",
-        fontSize: "2.441rem",
-        lineHeight: "150%",
+      mobile: {
+        h1: {
+          fontFamily: "Roboto-Bold",
+          fontSize: "1.953rem",
+          lineHeight: "150%",
+        },
+        h2: {
+          fontFamily: "Roboto-Bold",
+          fontSize: "1.563rem",
+          lineHeight: "150%",
+        },
+        h3: {
+          fontFamily: "Roboto-Medium",
+          fontSize: "1.25rem",
+          lineHeight: "150%",
+        },
+        h4: {
+          fontFamily: "Roboto-Medium",
+          fontSize: "1rem",
+          lineHeight: "150%",
+        },
       },
-      h2: {
-        fontFamily: "Roboto-Bold",
-        fontSize: "1.953rem",
-        lineHeight: "150%",
-      },
-      h3: {
-        fontFamily: "Roboto-Medium",
-        fontSize: "1.563rem",
-        lineHeight: "150%",
-      },
-      h4: {
-        fontFamily: "Roboto-Medium",
-        fontSize: "1.25rem",
-        lineHeight: "150%",
+      desktop: {
+        h1: {
+          fontFamily: "Roboto-Bold",
+          fontSize: "2.441rem",
+          lineHeight: "150%",
+        },
+        h2: {
+          fontFamily: "Roboto-Bold",
+          fontSize: "1.953rem",
+          lineHeight: "150%",
+        },
+        h3: {
+          fontFamily: "Roboto-Medium",
+          fontSize: "1.563rem",
+          lineHeight: "150%",
+        },
+        h4: {
+          fontFamily: "Roboto-Medium",
+          fontSize: "1.25rem",
+          lineHeight: "150%",
+        },
       },
     },
     paragraphy: {
