@@ -1,7 +1,12 @@
 import styled from "@emotion/styled";
+import media from "../../utils/media";
 
 export const SC_ContentBlock = styled("div")`
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+
+  ${media.min("tablet")} {
+    margin-bottom: 60px;
+  }
 
   > h1,
   > h2,
