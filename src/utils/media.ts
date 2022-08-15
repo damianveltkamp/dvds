@@ -1,7 +1,6 @@
 import { theme } from "../theme/theme";
-import { calcBreakpoints } from "./calcBreakpoints";
 
-const { sm, md, lg, xl } = calcBreakpoints(theme.breakpoints);
+const { sm, md, lg, xl } = theme.breakpoints;
 
 export const breakpoints = {
   mobile: sm,
