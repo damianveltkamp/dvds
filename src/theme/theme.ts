@@ -1,6 +1,6 @@
 const theme = {
   global: {
-    fontSize: 20,
+    fontSize: "18px",
   },
   colors: {
     DVBlue: "#1f2937",
