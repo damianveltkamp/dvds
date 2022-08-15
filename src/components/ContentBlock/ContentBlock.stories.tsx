@@ -17,7 +17,7 @@ export const contentBlock: Story<ContentBlockProps> = () => {
   return (
     <MainContainer>
       <ContentBlock>
-        <Heading lvl="h2">
+        <Heading lvl="h1">
           What I have learned after creating a design system
         </Heading>
         <Paragraph>
