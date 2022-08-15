@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const SC_Header = styled("header")`
-  padding: 20px;
+  padding: 20px 0;
   background-color: ${({ theme }) => `${theme.colors.DVBlue}`};
 `;
 
