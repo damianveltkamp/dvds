@@ -1,4 +1,4 @@
-import { BareLink } from "../Link/BareLink";
+import { Heading } from "../Heading/Heading";
 import {
   SC_ArticleCardContainer,
   SC_ArticleDate,
@@ -6,7 +6,6 @@ import {
   SC_ArticleFooter,
   SC_ArticleTag,
   SC_ArticleTagsContainer,
-  SC_ArticleTitle,
 } from "./ArticleCard.styles";
 
 export type ArticleCardProps = {
@@ -27,19 +26,21 @@ export const ArticleCard = ({
   slug,
 }: ArticleCardProps) => {
   return (
-    <BareLink href={slug}>
-      <SC_ArticleCardContainer>
-        <SC_ArticleTitle>{title}</SC_ArticleTitle>
-        <SC_ArticleDate dateTime={dateTime}>{date}</SC_ArticleDate>
-        <SC_ArticleExcerpt>{excerpt}</SC_ArticleExcerpt>
-        <SC_ArticleFooter>
-          <SC_ArticleTagsContainer>
-            {tags.map((tag) => (
-              <SC_ArticleTag key={tag}>{tag}</SC_ArticleTag>
-            ))}
-          </SC_ArticleTagsContainer>
-        </SC_ArticleFooter>
-      </SC_ArticleCardContainer>
-    </BareLink>
+    <SC_ArticleCardContainer href={slug}>
+      <Heading lvl="h2" variant="DVBlue">
+        {title}
+      </Heading>
+      <SC_ArticleDate dateTime={dateTime}>{date}</SC_ArticleDate>
+      <SC_ArticleExcerpt lvl="h3" variant="DVBlue">
+        {excerpt}
+      </SC_ArticleExcerpt>
+      <SC_ArticleFooter>
+        <SC_ArticleTagsContainer>
+          {tags.map((tag) => (
+            <SC_ArticleTag key={tag}>{tag}</SC_ArticleTag>
+          ))}
+        </SC_ArticleTagsContainer>
+      </SC_ArticleFooter>
+    </SC_ArticleCardContainer>
   );
 };
