@@ -41,6 +41,15 @@ export const SC_H1 = styled("h1")<SC_HeadingProps>`
       `${theme.typography.heading.desktop.h1.fontSize}`};
     line-height: ${({ theme }) =>
       `${theme.typography.heading.desktop.h1.lineHeight}`};
+
+    > a {
+      font-family: ${({ theme }) =>
+        `${theme.typography.heading.desktop.h1.fontFamily}`};
+      font-size: ${({ theme }) =>
+        `${theme.typography.heading.desktop.h1.fontSize}`};
+      line-height: ${({ theme }) =>
+        `${theme.typography.heading.desktop.h1.lineHeight}`};
+    }
   }
 
   > a {
@@ -69,6 +78,15 @@ export const SC_H2 = styled("h2")<SC_HeadingProps>`
       `${theme.typography.heading.desktop.h2.fontSize}`};
     line-height: ${({ theme }) =>
       `${theme.typography.heading.desktop.h2.lineHeight}`};
+
+    > a {
+      font-family: ${({ theme }) =>
+        `${theme.typography.heading.desktop.h2.fontFamily}`};
+      font-size: ${({ theme }) =>
+        `${theme.typography.heading.desktop.h2.fontSize}`};
+      line-height: ${({ theme }) =>
+        `${theme.typography.heading.desktop.h2.lineHeight}`};
+    }
   }
 
   > a {
@@ -97,6 +115,15 @@ export const SC_H3 = styled("h3")<SC_HeadingProps>`
       `${theme.typography.heading.desktop.h3.fontSize}`};
     line-height: ${({ theme }) =>
       `${theme.typography.heading.desktop.h3.lineHeight}`};
+
+    > a {
+      font-family: ${({ theme }) =>
+        `${theme.typography.heading.desktop.h3.fontFamily}`};
+      font-size: ${({ theme }) =>
+        `${theme.typography.heading.desktop.h3.fontSize}`};
+      line-height: ${({ theme }) =>
+        `${theme.typography.heading.desktop.h3.lineHeight}`};
+    }
   }
 
   > a {
@@ -125,6 +152,15 @@ export const SC_H4 = styled("h4")<SC_HeadingProps>`
       `${theme.typography.heading.desktop.h4.fontSize}`};
     line-height: ${({ theme }) =>
       `${theme.typography.heading.desktop.h4.lineHeight}`};
+
+    > a {
+      font-family: ${({ theme }) =>
+        `${theme.typography.heading.desktop.h4.fontFamily}`};
+      font-size: ${({ theme }) =>
+        `${theme.typography.heading.desktop.h4.fontSize}`};
+      line-height: ${({ theme }) =>
+        `${theme.typography.heading.desktop.h4.lineHeight}`};
+    }
   }
 
   > a {
