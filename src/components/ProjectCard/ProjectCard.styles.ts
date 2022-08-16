@@ -2,6 +2,7 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 import { theme } from "../../theme/theme";
+import media from "../../utils/media";
 import { BareExternalLink } from "../Link/BareExternalLink";
 import { BareLink } from "../Link/BareLink";
 
@@ -36,11 +37,16 @@ export const SC_ProjectCardExternal = styled(BareExternalLink)`
 export const SC_ProjectImageContainer = styled("figure")`
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 170px;
   margin: 0;
   overflow: hidden;
 
+  ${media.min("tablet")} {
+    height: 250px;
+  }
+
   &:before {
+    content: "";
     position: absolute;
     z-index: 10;
     top: 0;
@@ -48,8 +54,7 @@ export const SC_ProjectImageContainer = styled("figure")`
     width: 100%;
     height: 100%;
     display: block;
-    background: rgba(0, 0, 0, 0.5);
-    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
   }
 `;
 
@@ -59,5 +64,5 @@ export const SC_ProjectCardContentContainer = styled("div")`
   margin-top: -2px;
   padding: 20px;
   text-align: center;
-  background: ${({ theme }) => `${theme.colors.DVOrange}`};
+  background-color: ${({ theme }) => `${theme.colors.DVOrange}`};
 `;
