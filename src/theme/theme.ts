@@ -63,6 +63,16 @@ const theme = {
       fontSize: "1rem",
       lineHeight: "150%",
     },
+    time: {
+      fontFamily: "Roboto-Regular",
+      fontSize: "1rem",
+      lineHeight: "150%",
+    },
+    tag: {
+      fontFamily: "Roboto-Regular",
+      fontSize: "0.65rem",
+      lineHeight: "150%",
+    },
   },
   breakpoints: {
     sm: 30,
