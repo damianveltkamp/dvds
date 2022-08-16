@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import media from "../../utils/media";
 
 export const SC_MainContainer = styled("main")`
+  width: 100%;
   max-width: 700px;
   margin: 0 auto;
   padding-inline: 20px;
