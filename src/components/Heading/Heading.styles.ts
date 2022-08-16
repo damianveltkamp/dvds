@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
-import { theme } from "../../theme/theme";
+import { theme, TypeofTheme } from "../../theme/theme";
 import media from "../../utils/media";
 import { HeaderVariants } from "./Heading";
 
@@ -9,6 +9,17 @@ const headingBase = css`
   margin: 0;
   color: ${theme.colors.white};
 `;
+
+const colorVariant = (variant: HeaderVariants, theme: TypeofTheme) => {
+  switch (variant) {
+    case "black":
+      return theme.colors.black;
+    case "DVBlue":
+      return theme.colors.black;
+    default:
+      return theme.colors.white;
+  }
+};
 
 type SC_HeadingProps = {
   variant?: HeaderVariants;
@@ -21,8 +32,7 @@ export const SC_H1 = styled("h1")<SC_HeadingProps>`
   font-size: ${({ theme }) => `${theme.typography.heading.mobile.h1.fontSize}`};
   line-height: ${({ theme }) =>
     `${theme.typography.heading.mobile.h1.lineHeight}`};
-  color: ${({ theme, variant }) =>
-    variant === "black" ? `${theme.colors.black}` : `${theme.colors.white}`};
+  color: ${({ variant, theme }) => colorVariant(variant, theme)};
 
   ${media.min("tablet")} {
     font-family: ${({ theme }) =>
@@ -50,8 +60,7 @@ export const SC_H2 = styled("h2")<SC_HeadingProps>`
   font-size: ${({ theme }) => `${theme.typography.heading.mobile.h2.fontSize}`};
   line-height: ${({ theme }) =>
     `${theme.typography.heading.mobile.h2.lineHeight}`};
-  color: ${({ theme, variant }) =>
-    variant === "black" ? `${theme.colors.black}` : `${theme.colors.white}`};
+  color: ${({ variant, theme }) => colorVariant(variant, theme)};
 
   ${media.min("tablet")} {
     font-family: ${({ theme }) =>
@@ -79,8 +88,7 @@ export const SC_H3 = styled("h3")<SC_HeadingProps>`
   font-size: ${({ theme }) => `${theme.typography.heading.mobile.h3.fontSize}`};
   line-height: ${({ theme }) =>
     `${theme.typography.heading.mobile.h3.lineHeight}`};
-  color: ${({ theme, variant }) =>
-    variant === "black" ? `${theme.colors.black}` : `${theme.colors.white}`};
+  color: ${({ variant, theme }) => colorVariant(variant, theme)};
 
   ${media.min("tablet")} {
     font-family: ${({ theme }) =>
@@ -108,8 +116,7 @@ export const SC_H4 = styled("h4")<SC_HeadingProps>`
   font-size: ${({ theme }) => `${theme.typography.heading.mobile.h4.fontSize}`};
   line-height: ${({ theme }) =>
     `${theme.typography.heading.mobile.h4.lineHeight}`};
-  color: ${({ theme, variant }) =>
-    variant === "black" ? `${theme.colors.black}` : `${theme.colors.white}`};
+  color: ${({ variant, theme }) => colorVariant(variant, theme)};
 
   ${media.min("tablet")} {
     font-family: ${({ theme }) =>
