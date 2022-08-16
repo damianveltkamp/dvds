@@ -1,6 +1,6 @@
 import NextLink from "next/link";
 
-import { SC_NextLink } from "./Link.styles";
+import { SC_Link } from "./Link.styles";
 
 export type LinkProps = {
   text: string;
@@ -10,10 +10,12 @@ export type LinkProps = {
 
 export const Link = ({ text, href, isExternal = false }: LinkProps) => {
   return isExternal ? (
-    <SC_NextLink href={href}>{text}</SC_NextLink>
+    <SC_Link href={href} target="_blank" rel="noreferrer">
+      {text}
+    </SC_Link>
   ) : (
     <NextLink href={href} passHref={true}>
-      <SC_NextLink>{text}</SC_NextLink>
+      <SC_Link>{text}</SC_Link>
     </NextLink>
   );
 };

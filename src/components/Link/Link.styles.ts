@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const SC_NextLink = styled("a")`
+export const SC_Link = styled("a")`
   font-family: "Roboto-Regular";
   font-size: 1rem;
   color: ${({ theme }) => `${theme.colors.DVOrange}`};
