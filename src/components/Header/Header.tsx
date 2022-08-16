@@ -11,7 +11,7 @@ export const Header = ({}: HeaderProps) => {
         <BareLink href="/">
           <Logo size={45} color="white" />
         </BareLink>
-        <BareLink href="https://github.com/damianveltkamp">
+        <BareLink href="https://github.com/damianveltkamp" isExternal={true}>
           <GithubBrands size={35} color="white" />
         </BareLink>
       </SC_ContentContainer>
