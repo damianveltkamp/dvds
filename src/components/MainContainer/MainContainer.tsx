@@ -7,5 +7,5 @@ export type MainContainerProps = {
 };
 
 export const MainContainer = ({ children }: MainContainerProps) => {
-  return <SC_MainContainer>{children}</SC_MainContainer>;
+  return <SC_MainContainer id="main">{children}</SC_MainContainer>;
 };
