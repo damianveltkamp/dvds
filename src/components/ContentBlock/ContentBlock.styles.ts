@@ -21,7 +21,7 @@ export const SC_ContentBlock = styled("div")`
     }
 
     &:not(:last-child) {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
   }
 
