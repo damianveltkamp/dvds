@@ -2,6 +2,10 @@ import { css } from "@emotion/react";
 import { theme } from "../theme/theme";
 
 export const globalStyles = css`
+  html {
+    scroll-behavior: smooth;
+  }
+
   html,
   body {
     height: 100%;
