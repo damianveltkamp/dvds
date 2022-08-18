@@ -3,12 +3,12 @@ import media from "../../utils/media";
 
 export const SC_ContentBlock = styled("div")`
   &:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 
   ${media.min("tablet")} {
     &:not(:last-child) {
-      margin-bottom: 60px;
+      margin-bottom: 80px;
     }
   }
 
@@ -16,14 +16,30 @@ export const SC_ContentBlock = styled("div")`
   > h2,
   > h3,
   > h4 {
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+
     &:not(:last-child) {
-      margin-bottom: 25px;
+      margin-bottom: 10px;
     }
   }
 
   > p {
     &:not(:last-child) {
       margin-bottom: 15px;
+    }
+  }
+
+  > pre {
+    margin-block: 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-top: 0;
     }
   }
 

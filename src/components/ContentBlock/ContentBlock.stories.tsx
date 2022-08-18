@@ -41,6 +41,12 @@ export const contentBlock: Story<ContentBlockProps> = () => {
           project to test locally without publishing.
         </Paragraph>
         <List items={["Item 1", "Item 2", "Item 3"]} />
+        <Heading lvl="h2">Storybook</Heading>
+        <Paragraph>
+          Storybook is an open-source tool that helps you build UI components
+          and pages in isolation. Storybook also streamlines the testing and
+          documenting of your components.
+        </Paragraph>
       </ContentBlock>
       <ContentBlock>
         <Heading lvl="h2">Local package testing</Heading>
