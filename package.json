@@ -1,6 +1,6 @@
 {
   "name": "@damianveltkamp/dvds",
-  "version": "0.1.49",
+  "version": "0.1.50",
   "main": "dist/cjs",
   "module": "dist/esm",
   "types": "dist/types/index.d.ts",
