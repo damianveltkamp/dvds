@@ -33,18 +33,6 @@ export const SC_ArticleFooter = styled("div")`
   gap: 20px;
 `;
 
-export const SC_ArticleDate = styled("time")`
-  display: flex;
-  align-items: center;
-  font-family: ${({ theme }) => `${theme.typography.time.fontFamily}`};
-  font-size: ${({ theme }) => `${theme.typography.time.fontSize}`};
-  line-height: ${({ theme }) => `${theme.typography.time.lineHeight}`};
-
-  &:not(:last-child) {
-    margin-bottom: 25px;
-  }
-`;
-
 export const SC_ArticleTagsContainer = styled("div")`
   display: flex;
   flex-wrap: wrap;

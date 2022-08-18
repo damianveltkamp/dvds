@@ -1,7 +1,7 @@
+import { DateLabel } from "../DateLabel/DateLabel";
 import { Heading } from "../Heading/Heading";
 import {
   SC_ArticleCardContainer,
-  SC_ArticleDate,
   SC_ArticleExcerpt,
   SC_ArticleFooter,
   SC_ArticleTag,
@@ -30,7 +30,7 @@ export const ArticleCard = ({
       <Heading lvl="h2" variant="DVBlue">
         {title}
       </Heading>
-      <SC_ArticleDate dateTime={dateTime}>{date}</SC_ArticleDate>
+      <DateLabel dateTime={dateTime}>{date}</DateLabel>
       <SC_ArticleExcerpt lvl="h3" variant="DVBlue">
         {excerpt}
       </SC_ArticleExcerpt>
