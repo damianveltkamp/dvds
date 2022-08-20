@@ -51,7 +51,6 @@ export const SC_H1 = styled("h1")<SC_HeadingProps>`
       `${theme.typography.heading.desktop.h1.lineHeight}`};
 
     > a {
-      color: blue;
       font-family: ${({ theme }) =>
         `${theme.typography.heading.desktop.h1.fontFamily}`};
       font-size: ${({ theme }) =>
