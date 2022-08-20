@@ -1,5 +1,4 @@
 export * from "./ArticleCard/ArticleCard";
-export * from "./ArticleCardContainer/ArticleCardContainer";
 export * from "./ContentBlock/ContentBlock";
 export * from "./DateLabel/DateLabel";
 export * from "./Footer/Footer";
