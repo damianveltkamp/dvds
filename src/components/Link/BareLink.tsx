@@ -1,6 +1,8 @@
 import NextLink from "next/link";
 import { ReactNode } from "react";
 
+import { SC_BareLink } from "./Link.styles";
+
 export type BareLinkProps = {
   href: string;
   children: ReactNode;
@@ -15,12 +17,17 @@ export const BareLink = ({
   className,
 }: BareLinkProps) => {
   return isExternal ? (
-    <a href={href} className={className} target="_blank" rel="noreferrer">
+    <SC_BareLink
+      href={href}
+      className={className}
+      target="_blank"
+      rel="noreferrer"
+    >
       {children}
-    </a>
+    </SC_BareLink>
   ) : (
-    <NextLink href={href} passHref={true}>
-      <a className={className}>{children}</a>
+    <NextLink href={href} passHref={true} className={className}>
+      <SC_BareLink className={className}>{children}</SC_BareLink>
     </NextLink>
   );
 };
