@@ -3,14 +3,16 @@ import styled from "@emotion/styled";
 
 import { theme, TypeofTheme } from "../../theme/theme";
 import media from "../../utils/media";
-import { HeaderVariants } from "./Heading";
+import { HeadingProps, HeadingVariants } from "./Heading";
+
+type SC_HeadingProps = Pick<HeadingProps, "variant">;
 
 const headingBase = css`
   margin: 0;
   color: ${theme.colors.white};
 `;
 
-const colorVariant = (variant: HeaderVariants, theme: TypeofTheme) => {
+const colorVariant = (variant: HeadingVariants, theme: TypeofTheme) => {
   switch (variant) {
     case "black":
       return theme.colors.black;
@@ -19,10 +21,6 @@ const colorVariant = (variant: HeaderVariants, theme: TypeofTheme) => {
     default:
       return theme.colors.white;
   }
-};
-
-type SC_HeadingProps = {
-  variant?: HeaderVariants;
 };
 
 export const SC_H1 = styled("h1")<SC_HeadingProps>`

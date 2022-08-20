@@ -2,13 +2,13 @@ import { ReactNode } from "react";
 
 import { SC_H1, SC_H2, SC_H3, SC_H4 } from "./Heading.styles";
 
-export type HeaderVariants = "DVBlue" | "black" | undefined;
+export type HeadingVariants = "DVBlue" | "black" | undefined;
 
 export type HeadingProps = {
   lvl: "h1" | "h2" | "h3" | "h4";
   children: ReactNode;
   id?: string;
-  variant?: HeaderVariants;
+  variant?: HeadingVariants;
   className?: string;
 };
 
