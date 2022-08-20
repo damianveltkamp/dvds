@@ -8,10 +8,7 @@ export const SC_ArticleCardContainer = styled(BareLink)`
   background: ${({ theme }) => `${theme.colors.DVOrange}`};
   padding-block: 25px;
   padding-inline: 40px;
-  color: ${({ theme }) => `${theme.colors.white}`};
   border-radius: 10px;
-  color: ${({ theme }) => `${theme.colors.DVBlue}`};
-  text-decoration: none;
 
   ${media.min("tablet")} {
     padding: 40px;

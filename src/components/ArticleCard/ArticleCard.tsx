@@ -30,7 +30,9 @@ export const ArticleCard = ({
       <Heading lvl="h2" variant="DVBlue">
         {title}
       </Heading>
-      <DateLabel dateTime={dateTime}>{date}</DateLabel>
+      <DateLabel variant="black" dateTime={dateTime}>
+        {date}
+      </DateLabel>
       <SC_ArticleExcerpt lvl="h3" variant="DVBlue">
         {excerpt}
       </SC_ArticleExcerpt>
