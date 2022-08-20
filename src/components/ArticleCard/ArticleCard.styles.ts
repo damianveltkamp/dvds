@@ -1,9 +1,8 @@
 import styled from "@emotion/styled";
 import media from "../../utils/media";
 import { Heading } from "../Heading/Heading";
-import { BareLink } from "../Link/BareLink";
 
-export const SC_ArticleCardContainer = styled(BareLink)`
+export const SC_ArticleCardContainer = styled("article")`
   display: block;
   background: ${({ theme }) => `${theme.colors.DVOrange}`};
   padding-block: 25px;
