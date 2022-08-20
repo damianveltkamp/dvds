@@ -1,3 +1,4 @@
+export * from "./Article/Article";
 export * from "./ArticleCard/ArticleCard";
 export * from "./ContentBlock/ContentBlock";
 export * from "./DateLabel/DateLabel";
