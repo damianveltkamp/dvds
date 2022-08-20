@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 
 import { theme } from "../../theme/theme";
 import media from "../../utils/media";
-import { BareExternalLink } from "../Link/BareExternalLink";
 import { BareLink } from "../Link/BareLink";
 
 const projectCardBase = css`
@@ -27,10 +26,6 @@ const projectCardBase = css`
 `;
 
 export const SC_ProjectCard = styled(BareLink)`
-  ${projectCardBase}
-`;
-
-export const SC_ProjectCardExternal = styled(BareExternalLink)`
   ${projectCardBase}
 `;
 
