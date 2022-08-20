@@ -2,6 +2,7 @@ export * from "./ArticleCard/ArticleCard";
 export * from "./ContentBlock/ContentBlock";
 export * from "./DateLabel/DateLabel";
 export * from "./Footer/Footer";
+export * from "./Grid/Grid";
 export * from "./Header/Header";
 export * from "./Heading/Heading";
 export * from "./Image/Image";
