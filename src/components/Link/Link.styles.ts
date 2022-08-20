@@ -7,14 +7,11 @@ export const SC_Link = styled("a")`
   text-decoration: none;
 
   &:focus {
-    outline: 2px solid ${({ theme }) => `${theme.colors.DVOrange}`};
+    outline: ${({ theme }) =>
+      `${theme.outline.primary} ${theme.colors.DVOrange}`};
   }
 `;
 
 export const SC_BareLink = styled("a")`
   text-decoration: none;
-
-  &:focus {
-    outline: 2px solid currentColor;
-  }
 `;

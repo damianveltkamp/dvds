@@ -11,6 +11,9 @@ const theme = {
   borderRadius: {
     primary: "8px",
   },
+  outline: {
+    primary: "1px solid",
+  },
   typography: {
     heading: {
       mobile: {
